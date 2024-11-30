@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel';
+    color:#4c2b08;
+}
+
+.banner {
+    height: 70px;
+    background-color: #4c2b08;
+    border: 2px solid #4c2b08;
+}
+
+.navbar {
+    height: 70px;
+    background-color: #f2f0eb;
+    color: #4c2b08;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:#4c2b08;
+    margin-left: 100px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid #4c2b08;
+}
+
+.content {
+    display: none;
+    margin-top: 60px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 80px 20px 80px;
+}
+
+.img img{
+    height: 104px;
+    width: 150px;
+    border-radius: 1rem;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 1.2px 1.2px 2px #9b9a9a; 
+}
+.inner_content{
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.inner_content h3{
+    font-size: 1.1rem;
+}
+
+.inner_content p{
+    font-size: 0.8rem;
+}
+
+.addtocart {
+    height: 34px;
+    width: 102px;
+    background-color: #4c2b08;
+    color: white;
+    border-radius: 1.2rem;
+    border: none;
+}
+
+.gift {
+    display: flex;
+    justify-content: space-around;
+    width: 380px;
+    height: 180px;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 1.2px 1.2px 2px #9b9a9a;
+}
+
+.banner .icon {
+    color: #fff1e4;
+    font-size:1.4rem;
+    padding: 20px;
+}
+
+#featured:target {
+    display: block;
+}
+
+#Thankyou:target {
+    display: block;
+}
+
