@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bestseller.css">
+    <link rel="icon" href="C:\Users\Hp\OneDrive\CSE326\Project\Resources\logo.png">
+    <title>Brewtopia Coffee Company</title>
+</head>
+<body>
+    <div class="header">
+        <i class="fa-solid fa-arrow-left back_btn"></i>
+        <h4>Take a break. Brewtopia awaits.</h4>
+    </div>
+
+    <div class="div">
+        <h2>Espresso</h2>
+        <p>Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.</p>
+    </div>
+    
+
+    <!-- items listed -->
+     <div class="container">
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\drink1.png">
+                <div class="content">
+                    <h4>Java Chip Frappuccino</h4>
+                    <p class="low">SHORT(237 mL) .344 Kcal</p>
+                    <p>Handcrafted espresso from the world's top 3% Arabica with st...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 430.50</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\drink2.png">
+                <div class="content">
+                    <h4>Classic Iced Coffee</h4>
+                    <p class="low">SHORT(237 mL) .128 Kcal</p>
+                    <p>Savour our premium coffee made with top 3% Arabica beans in ...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 236.25</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\drink3.png">
+                <div class="content">
+                    <h4>Classic Hot Coffee</h4>
+                    <p class="low">Classic Hot Coffee(237 mL) .105 Kcal</p>
+                    <p>Savour our premium coffee made with top 3% Arabica beans in ...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 157.50</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\drink5.png">
+                <div class="content">
+                    <h4>Iced Saffron Pistachio Latte</h4>
+                    <p class="low">TALL(603 Kcal) .603 Kcal</p>
+                    <p>Made from our handcrafted Diwali Blend espresso, a signature...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 472.50</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\drink4.jpg">
+                <div class="content">
+                    <h4>Caffè Americano</h4>
+                    <p class="low">SHORT() .</p>
+                    <p>Rich, full-bodied espresso with hot water in true European ...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 278.25</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+     </div>
+
+    
+
+    <script>
+        let btn = document.querySelectorAll(".addtocart");
+        for (let i=0; i<btn.length; i++) {
+            btn[i].addEventListener("click", () => {
+                alert("Item Added.")
+            })
+        };
+
+        let backBtn = document.querySelector(".back_btn");
+
+        backBtn.addEventListener("click", () =>{
+            window.location.href = "C:/Users/Hp/OneDrive/CSE326/Project/order/landing.html";
+        });
+    </script>
+</body>
+</html>

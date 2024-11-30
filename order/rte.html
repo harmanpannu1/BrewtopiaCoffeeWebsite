@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bestseller.css">
+    <link rel="icon" href="C:\Users\Hp\OneDrive\CSE326\Project\Resources\logo.png">
+    <title>Brewtopia Coffee Company</title>
+</head>
+<body>
+    <div class="header">
+        <i class="fa-solid fa-arrow-left back_btn"></i>
+        <h4>Take a break. Brewtopia awaits.</h4>
+    </div>
+
+    <div class="div">
+        <h2>Festive Indulgence</h2>
+    </div>
+    
+
+    <!-- items listed -->
+     <div class="container">
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\rte1.png">
+                <div class="content">
+                    <h4>Festive Indulgence Dry Fruit and Nut Fudge - ...</h4>
+                    <p class="low">"Serving size: 15g Calories per serving: refer description"</p>
+                    <p>Celebrate the festival of lights with this indulgent box of ...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 950.00</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\rte2.png">
+                <div class="content">
+                    <h4>Festive Indulgence Dry Fruit and Nut Fudge - ...</h4>
+                    <p class="low">"Serving size: 15g Calories per serving: refer description"</p>
+                    <p>Celebrate the festival of lights with this indulgent box of ...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 1550.00</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\rte3.png">
+                <div class="content">
+                    <h4>Coffee Choco Barks</h4>
+                    <p class="low">"Serving size: 25g Calories per serving: 145kcal"</p>
+                    <p>Experience the perfect blend of Bombay Sweet Shop’s iconic c...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 350.00</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+     </div>
+
+    
+
+    <script>
+        let btn = document.querySelectorAll(".addtocart");
+        for (let i=0; i<btn.length; i++) {
+            btn[i].addEventListener("click", () => {
+                alert("Item Added.")
+            })
+        };
+
+        let backBtn = document.querySelector(".back_btn");
+
+        backBtn.addEventListener("click", () =>{
+            window.location.href = "C:/Users/Hp/OneDrive/CSE326/Project/order/landing.html";
+        });
+    </script>
+</body>
+</html>

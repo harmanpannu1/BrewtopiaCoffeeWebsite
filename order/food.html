@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bestseller.css">
+    <link rel="icon" href="C:\Users\Hp\OneDrive\CSE326\Project\Resources\logo.png">
+    <title>Brewtopia Coffee Company</title>
+</head>
+<body>
+    <div class="header">
+        <i class="fa-solid fa-arrow-left back_btn"></i>
+        <h4>Take a break. Brewtopia awaits.</h4>
+    </div>
+
+    <div class="div">
+        <h2>Sandwiches & Wraps</h2>
+        <p>Signature breads made with fresh ingredients and in-house sauces.</p>
+    </div>
+    
+
+    <!-- items listed -->
+     <div class="container">
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\food1.jpg">
+                <div class="content">
+                    <h4>Tandoori Soya Chaap Wrap</h4>
+                    <p class="low">484Kcal</p>
+                    <p>Soft succulent soya chaap in tandoori marinade, cooked to a ...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 357.00</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\food2.jpg">
+                <div class="content">
+                    <h4>Bake In Mushroom Cheese Melt Baguette SW</h4>
+                    <p class="low">PER SERVE (210 gm) - 541Kcal</p>
+                    <p>Hearty mushrooms topped with melted yellow cheddar cheese in...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 472.50</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\food3.jpg">
+                <div class="content">
+                    <h4>Bake In Pesto Veggie Sourdough SW</h4>
+                    <p class="low">PER SERVE (150 gm) - 400Kcal</p>
+                    <p>Sauteed broccoli florets and mushroom slices with chopped ar...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 430.50</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\food4.png">
+                <div class="content">
+                    <h4>Basil Tomato Mozzarella Cheese Sandwich</h4>
+                    <p class="low">PER SERVE (170 gm) - 484Kcal</p>
+                    <p>Tomato and mozzarella slices on a layer of basil sauce sandw...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 383.25</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_inner">
+                <img src="C:\Users\Hp\OneDrive\CSE326\Project\Resources\food5.png">
+                <div class="content">
+                    <h4>Spinach & Corn Sandwich</h4>
+                    <p class="low">PER SERVE (200 gm ) - 541 kcal</p>
+                    <p>A savory blend of spinach and corn, garlic & herb aioli, mel...</p>
+                </div>
+            </div>
+            <div class="price">
+                <p>₹ 262.50</p>
+                <button class="addtocart">Add Item</button>
+            </div>
+        </div>
+
+     </div>
+
+    
+
+    <script>
+        let btn = document.querySelectorAll(".addtocart");
+        for (let i=0; i<btn.length; i++) {
+            btn[i].addEventListener("click", () => {
+                alert("Item Added.")
+            })
+        };
+
+        let backBtn = document.querySelector(".back_btn");
+
+        backBtn.addEventListener("click", () =>{
+            window.location.href = "C:/Users/Hp/OneDrive/CSE326/Project/order/landing.html";
+        });
+    </script>
+</body>
+</html>
